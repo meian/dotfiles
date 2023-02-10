@@ -1,0 +1,8 @@
+
+DIR=$HOME/.bash_completion.d
+
+if [ -d $DIR ] ; then
+    find $DIR/ -type f -readable | while read f ; do
+        . $f
+    done
+fi
