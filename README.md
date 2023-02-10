@@ -5,11 +5,14 @@ devcontainer内で使用することを想定しています。
 
 ## インストール
 
-cloneしてinstall.shを実行します。
+cloneしてinstall.shを実行します。  
+postCreateCommandに仕掛けておくと便利
 
 ```shell
 $ git clone https://github.com/meian/dotfiles.git
 $ ./dotfiles/bin/install.sh
+# 追加のツール類をインストールする場合はこれも実行する
+$ init.sh
 ```
 
 ## 開発メモ
